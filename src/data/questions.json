@@ -1372,6 +1372,195 @@
         "Software",
         "Hardware"
       ]
-    }
+    },
+    {
+    "id": "U4P37",
+    "unidad": 4,
+    "enunciado": "Los aspectos a considerar para el intercambio de la información",
+    "tipo": "seleccion_multiple",
+    "opciones": [
+      "Mensajería electrónica",
+      "Transporte de activos",
+      "Acuerdos de intercambio",
+      "Acuerdos de confidencialidad y secreto"
+    ],
+    "respuesta_correcta": [
+      "Mensajería electrónica",
+      "Acuerdos de intercambio",
+      "Acuerdos de confidencialidad y secreto"
+    ]
+  },
+  {
+    "id": "U4P38",
+    "unidad": 4,
+    "enunciado": "¿Qué requisito de seguridad de la información abarca la configuración de los ajustes de acceso para requerir que los empleados de una organización se autentiquen primero antes de acceder a ciertas páginas web?",
+    "tipo": "seleccion_unica",
+    "opciones": [
+      "Escalabilidad",
+      "Confidencialidad",
+      "Disponibilidad",
+      "Seguridad",
+      "Integridad"
+    ],
+    "respuesta_correcta": "Confidencialidad"
+  },
+  {
+    "id": "U4P39",
+    "unidad": 4,
+    "enunciado": "Esta herramienta está escrita por phyton y permite capturar los hash con las credenciales de los usuarios que se encuentren conectados a la misma red en la que esté el equipo del atacante",
+    "tipo": "seleccion_unica",
+    "opciones": [
+      "STICKY KEYS",
+      "SAYCHEESE",
+      "SEEKER",
+      "RESPONDER.PY"
+    ],
+    "respuesta_correcta": "RESPONDER.PY"
+  },
+  {
+    "id": "U4P40",
+    "unidad": 4,
+    "enunciado": "DNS TUNNELING con esta herramienta se permite a través de tráfico del puerto DHCP ejecutar acciones, enviar archivos o navegar, este ataque será el único visible para un administrador de red",
+    "tipo": "verdadero_falso",
+    "opciones": [
+      "Verdadero",
+      "Falso"
+    ],
+    "respuesta_correcta": "Falso"
+  },
+  {
+    "id": "U4P41",
+    "unidad": 4,
+    "enunciado": "Para la implementar la política de acceso remoto se debe evaluar tomando en cuenta",
+    "tipo": "seleccion_multiple",
+    "opciones": [
+      "Capacidad técnica del transporte.",
+      "Aspectos ergonómicos",
+      "Legislación aplicable",
+      "Perfil de riesgo de la información que se maneja"
+    ],
+    "respuesta_correcta": [
+      "Legislación aplicable",
+      "Perfil de riesgo de la información que se maneja"
+    ]
+  },
+  {
+    "id": "U4P42",
+    "unidad": 4,
+    "enunciado": "¿Es ético el comportamiento de un empleado que presta su tarjeta de identificación hasta que uno de sus compañeros pueda obtener una nueva en Recursos Humanos debido a que la perdió?",
+    "tipo": "verdadero_falso",
+    "opciones": [
+      "Verdadero",
+      "Falso"
+    ],
+    "respuesta_correcta": "Falso"
+  },
+  {
+    "id": "U4P43",
+    "unidad": 4,
+    "enunciado": "...es una disciplina que convierte la información contenida en medios informáticos, en herramientas valiosas para ofrecer certeza o convencimiento al juez sobre unos hechos determinados",
+    "tipo": "seleccion_unica",
+    "opciones": [
+      "Ninguna",
+      "Pericia informática",
+      "Evidencia digital",
+      "Delito informático"
+    ],
+    "respuesta_correcta": "Pericia informática"
+  },
+  {
+    "id": "U4P44",
+    "unidad": 4,
+    "enunciado": "Una amenaza se puede definir como:",
+    "tipo": "seleccion_unica",
+    "opciones": [
+      "Un agente o evento que puede explotar una vulnerabilidad identificada dentro de una empresa",
+      "Una vulnerabilidad identificada dentro de una empresa",
+      "Una serie de eventos desafortunados que activan un plan de emergencia en una empresa",
+      "Una medida orientada a mitigar de alguna forma los riesgos que puedan existir en una empres"
+    ],
+    "respuesta_correcta": "Un agente o evento que puede explotar una vulnerabilidad identificada dentro de una empresa"
+  },
+  {
+    "id": "U4P45",
+    "unidad": 4,
+    "enunciado": "Un delito informático es un número ilimitado de actos contra la confidencialidad, la integridad y la disponibilidad de los datos o sistemas informáticos",
+    "tipo": "verdadero_falso",
+    "opciones": [
+      "Verdadero",
+      "Falso"
+    ],
+    "respuesta_correcta": "Verdadero"
+  },
+  {
+    "id": "U4P46",
+    "unidad": 4,
+    "enunciado": "La zona local contiene sitios web que no están en su computadora o en su intranet local, o que no están ya asignados a otra zona. El nivel de seguridad predeterminado es medio",
+    "tipo": "verdadero_falso",
+    "opciones": [
+      "Verdadero",
+      "Falso"
+    ],
+    "respuesta_correcta": "Falso"
+  },
+  {
+    "id": "U4P47",
+    "unidad": 4,
+    "enunciado": "La infraestructura de clave pública es un esquema asimétrico que utiliza un par de claves para la encriptación",
+    "tipo": "verdadero_falso",
+    "opciones": [
+      "Verdadero",
+      "Falso"
+    ],
+    "respuesta_correcta": "Verdadero"
+  },
+  {
+    "id": "U4P48",
+    "unidad": 4,
+    "enunciado": "La definición de este es \"robar o secuestrar una sesión activa de un escritorio remoto\".",
+    "tipo": "seleccion_unica",
+    "opciones": [
+      "STICKY KEYS",
+      "RDP HIJACKING",
+      "SAYCHEESE",
+      "SEEKER"
+    ],
+    "respuesta_correcta": "RDP HIJACKING"
+  },
+  {
+    "id": "U4P49",
+    "unidad": 4,
+    "enunciado": "¿Cuál de los siguientes equipos gestiona la Seguridad Defensiva de una empresa?",
+    "tipo": "seleccion_unica",
+    "opciones": [
+      "Dark Team",
+      "Todas las respuestas son correctas",
+      "Red Team",
+      "Blue Team"
+    ],
+    "respuesta_correcta": "Blue Team"
+  },
+  {
+    "id": "U4P50",
+    "unidad": 4,
+    "enunciado": "SHERLOCK para PowerShell permite realizar una búsqueda de amenazas (parches faltantes) de un equipo (servidor o endpoint) para posterior a esto elevar privilegios del mismo",
+    "tipo": "verdadero_falso",
+    "opciones": [
+      "Verdadero",
+      "Falso"
+    ],
+    "respuesta_correcta": "Falso"
+  },
+  {
+    "id": "U4P51",
+    "unidad": 4,
+    "enunciado": "Evidencia digital es cualquier documento, archivo, registro, dato, etc., contenido en un soporte informático, susceptible de tratamiento digital",
+    "tipo": "verdadero_falso",
+    "opciones": [
+      "Verdadero",
+      "Falso"
+    ],
+    "respuesta_correcta": "Verdadero"
+  }
   ]
 }
