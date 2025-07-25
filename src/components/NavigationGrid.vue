@@ -3,20 +3,66 @@
     <h3 class="grid-title">Navegación</h3>
 
     <!-- Filtros por unidad -->
-    <div class="unit-filters">
+    <div class="filter-section">
+      <h4 class="filter-title">Filtrar por Unidad:</h4>
+      <div class="unit-filters">
+        <button
+          v-for="unit in availableUnits"
+          :key="unit"
+          @click="selectedUnit = unit"
+          :class="['unit-filter', { active: selectedUnit === unit }]"
+        >
+          Unidad {{ unit }}
+        </button>
+        <button
+          @click="selectedUnit = null"
+          :class="['unit-filter', { active: selectedUnit === null }]"
+        >
+          Todas
+        </button>
+      </div>
+    </div>
+
+    <!-- Filtros por tipo de pregunta -->
+    <div class="filter-section">
+      <h4 class="filter-title">Filtrar por Tipo:</h4>
+      <div class="type-filters">
+        <button
+          v-for="type in availableTypes"
+          :key="type.value"
+          @click="selectedType = type.value"
+          :class="['type-filter', { active: selectedType === type.value }]"
+          :title="type.description"
+        >
+          {{ type.label }}
+        </button>
+        <button
+          @click="selectedType = null"
+          :class="['type-filter', { active: selectedType === null }]"
+        >
+          Todos
+        </button>
+      </div>
+    </div>
+
+    <!-- Estadísticas de filtros aplicados -->
+    <div v-if="filtersApplied" class="filter-info">
+      <small>
+        📊 Mostrando <strong>{{ filteredQuestions.length }}</strong> de
+        <strong>{{ questions.length }}</strong> preguntas
+        <span v-if="selectedUnit">
+          • <strong>Unidad {{ selectedUnit }}</strong></span
+        >
+        <span v-if="selectedType">
+          • <strong>{{ getTypeLabel(selectedType) }}</strong></span
+        >
+      </small>
       <button
-        v-for="unit in availableUnits"
-        :key="unit"
-        @click="selectedUnit = unit"
-        :class="['unit-filter', { active: selectedUnit === unit }]"
+        @click="clearAllFilters"
+        class="clear-filters-btn"
+        title="Limpiar todos los filtros"
       >
-        Unidad {{ unit }}
-      </button>
-      <button
-        @click="selectedUnit = null"
-        :class="['unit-filter', { active: selectedUnit === null }]"
-      >
-        Todas
+        ✖️ Limpiar filtros
       </button>
     </div>
 
@@ -96,6 +142,36 @@ export default {
   emits: ["question-selected"],
   setup(props, { emit }) {
     const selectedUnit = ref(null);
+    const selectedType = ref(null);
+
+    // Definir tipos de preguntas disponibles con labels descriptivos
+    const questionTypes = {
+      seleccion_unica: {
+        label: "Opción Única",
+        description: "Una sola respuesta correcta",
+        icon: "⚪",
+      },
+      seleccion_multiple: {
+        label: "Múltiple",
+        description: "Varias respuestas correctas",
+        icon: "☑️",
+      },
+      verdadero_falso: {
+        label: "V/F",
+        description: "Verdadero o Falso",
+        icon: "✓✗",
+      },
+      rellenar_espacio: {
+        label: "Completar",
+        description: "Rellenar espacios en blanco",
+        icon: "📝",
+      },
+      emparejar: {
+        label: "Emparejar",
+        description: "Relacionar conceptos",
+        icon: "🔗",
+      },
+    };
 
     // Obtener unidades disponibles
     const availableUnits = computed(() => {
@@ -103,19 +179,49 @@ export default {
       return units.sort((a, b) => a - b);
     });
 
-    // Filtrar preguntas por unidad
+    // Obtener tipos de preguntas disponibles
+    const availableTypes = computed(() => {
+      const types = [...new Set(props.questions.map((q) => q.tipo))];
+      return types
+        .filter((type) => questionTypes[type]) // Solo tipos conocidos
+        .map((type) => ({
+          value: type,
+          label: questionTypes[type].label,
+          description: questionTypes[type].description,
+          icon: questionTypes[type].icon,
+        }))
+        .sort((a, b) => a.label.localeCompare(b.label));
+    });
+
+    // Verificar si hay filtros aplicados
+    const filtersApplied = computed(() => {
+      return selectedUnit.value !== null || selectedType.value !== null;
+    });
+
+    // Filtrar preguntas por unidad y tipo
     const filteredQuestions = computed(() => {
       let filtered = props.questions.map((question, index) => ({
         ...question,
         originalIndex: index,
       }));
 
+      // Aplicar filtro de unidad
       if (selectedUnit.value !== null) {
         filtered = filtered.filter((q) => q.unidad === selectedUnit.value);
       }
 
+      // Aplicar filtro de tipo
+      if (selectedType.value !== null) {
+        filtered = filtered.filter((q) => q.tipo === selectedType.value);
+      }
+
       return filtered;
     });
+
+    // Obtener label del tipo de pregunta
+    const getTypeLabel = (type) => {
+      return questionTypes[type]?.label || type;
+    };
 
     // Calcular estadísticas
     const stats = computed(() => {
@@ -158,7 +264,11 @@ export default {
       if (state === false) statusText = "Incorrecta";
       if (index === props.currentIndex) statusText = "Pregunta actual";
 
-      return `${question.id} - ${statusText}\nTipo: ${question.tipo}\nUnidad: ${question.unidad}`;
+      const typeInfo = questionTypes[question.tipo];
+      const typeIcon = typeInfo?.icon || "❓";
+      const typeLabel = typeInfo?.label || question.tipo;
+
+      return `${question.id} - ${statusText}\nTipo: ${typeIcon} ${typeLabel}\nUnidad: ${question.unidad}`;
     };
 
     // Seleccionar pregunta
@@ -166,14 +276,25 @@ export default {
       emit("question-selected", index);
     };
 
+    // Limpiar todos los filtros
+    const clearAllFilters = () => {
+      selectedUnit.value = null;
+      selectedType.value = null;
+    };
+
     return {
       selectedUnit,
+      selectedType,
       availableUnits,
+      availableTypes,
+      filtersApplied,
       filteredQuestions,
       stats,
       getQuestionButtonClass,
       getQuestionTooltip,
+      getTypeLabel,
       selectQuestion,
+      clearAllFilters,
     };
   },
 };
@@ -199,14 +320,28 @@ export default {
   padding-bottom: 0.5rem;
 }
 
-.unit-filters {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem;
+.filter-section {
   margin-bottom: 1.5rem;
 }
 
-.unit-filter {
+.filter-title {
+  color: #555;
+  margin-bottom: 0.75rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.unit-filters,
+.type-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.unit-filter,
+.type-filter {
   padding: 0.5rem 0.75rem;
   border: 1px solid #ddd;
   background: white;
@@ -214,16 +349,56 @@ export default {
   cursor: pointer;
   font-size: 0.875rem;
   transition: all 0.2s ease;
+  position: relative;
 }
 
-.unit-filter:hover {
+.unit-filter:hover,
+.type-filter:hover {
   background: #f0f0f0;
+  transform: translateY(-1px);
 }
 
 .unit-filter.active {
   background: #667eea;
   color: white;
   border-color: #667eea;
+}
+
+.type-filter.active {
+  background: #764ba2;
+  color: white;
+  border-color: #764ba2;
+}
+
+.filter-info {
+  background: #e3f2fd;
+  border: 1px solid #bbdefb;
+  border-radius: 6px;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  color: #1565c0;
+  font-size: 0.875rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.clear-filters-btn {
+  background: #f44336;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 0.25rem 0.5rem;
+  font-size: 0.75rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.clear-filters-btn:hover {
+  background: #d32f2f;
+  transform: translateY(-1px);
 }
 
 .questions-grid {
@@ -365,6 +540,21 @@ export default {
     margin-bottom: 1rem;
   }
 
+  .filter-section {
+    margin-bottom: 1rem;
+  }
+
+  .unit-filters,
+  .type-filters {
+    gap: 0.25rem;
+  }
+
+  .unit-filter,
+  .type-filter {
+    padding: 0.4rem 0.6rem;
+    font-size: 0.8rem;
+  }
+
   .questions-grid {
     grid-template-columns: repeat(auto-fill, minmax(35px, 1fr));
   }
@@ -373,6 +563,11 @@ export default {
     width: 35px;
     height: 35px;
     font-size: 0.75rem;
+  }
+
+  .filter-info {
+    padding: 0.5rem;
+    font-size: 0.8rem;
   }
 }
 </style>
