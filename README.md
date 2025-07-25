@@ -126,23 +126,153 @@ const questionStates = ref([])        // Estado: null, true, false
 - Stack layout para móviles
 - Breakpoints: 576px, 768px, 992px
 
-## 🔧 Instalación y Configuración
+## � Despliegue en Producción
 
-### Requisitos Previos
-- Node.js (versión 14 o superior)
-- npm o yarn
+### Opción 1: Vercel (Recomendado - Gratis)
 
-### Instalación
+**Vercel** es la plataforma más fácil para desplegar aplicaciones Vue.js. Es gratuita y ofrece excelente rendimiento.
+
+#### Método A: Despliegue desde GitHub (Recomendado)
+
+1. **Ir a Vercel**: 
+   - Visita [vercel.com](https://vercel.com)
+   - Crea una cuenta gratuita o inicia sesión
+
+2. **Conectar repositorio**:
+   - Haz clic en "New Project"
+   - Conecta tu cuenta de GitHub
+   - Selecciona este repositorio: `kaandradec/cripto-test`
+
+3. **Configurar proyecto**:
+   ```
+   Framework Preset: Vue.js
+   Build Command: npm run build
+   Output Directory: dist
+   Install Command: npm install
+   ```
+
+4. **Desplegar**:
+   - Haz clic en "Deploy"
+   - Vercel detectará automáticamente la configuración
+   - En 2-3 minutos tendrás tu app live
+
+5. **URL personalizada** (opcional):
+   - En el dashboard de Vercel puedes configurar un dominio personalizado
+   - O usar la URL generada: `https://tu-proyecto.vercel.app`
+
+#### Método B: Vercel CLI
+
 ```bash
-# Instalar dependencias
-npm install
+# Instalar Vercel CLI globalmente
+npm i -g vercel
 
-# Ejecutar servidor de desarrollo
-npm run serve
+# Desde la carpeta del proyecto
+vercel
 
-# Compilar para producción
-npm run build
+# Seguir las instrucciones interactivas
+# La app se desplegará automáticamente
 ```
+
+#### Configuración incluida
+
+El proyecto ya incluye:
+- ✅ `vercel.json` - Configuración de rutas SPA
+- ✅ `vercel-build` script en package.json
+- ✅ Optimizaciones de build para producción
+
+### Opción 2: Netlify (Alternativa gratuita)
+
+1. **Ir a Netlify**: 
+   - Visita [netlify.com](https://netlify.com)
+   - Crea cuenta gratuita
+
+2. **Desplegar desde Git**:
+   - "New site from Git"
+   - Conecta GitHub
+   - Selecciona el repositorio
+
+3. **Configuración**:
+   ```
+   Build command: npm run build
+   Publish directory: dist
+   ```
+
+### Opción 3: GitHub Pages
+
+1. **Instalar gh-pages**:
+   ```bash
+   npm install --save-dev gh-pages
+   ```
+
+2. **Agregar scripts al package.json**:
+   ```json
+   {
+     "scripts": {
+       "predeploy": "npm run build",
+       "deploy": "gh-pages -d dist"
+     }
+   }
+   ```
+
+3. **Desplegar**:
+   ```bash
+   npm run deploy
+   ```
+
+### Opción 4: Firebase Hosting
+
+1. **Instalar Firebase CLI**:
+   ```bash
+   npm install -g firebase-tools
+   ```
+
+2. **Inicializar proyecto**:
+   ```bash
+   firebase login
+   firebase init hosting
+   ```
+
+3. **Configurar**:
+   - Public directory: `dist`
+   - Single-page app: `Yes`
+
+4. **Desplegar**:
+   ```bash
+   npm run build
+   firebase deploy
+   ```
+
+### 🌐 URLs de Demo
+
+Una vez desplegado, la aplicación estará disponible en:
+- **Vercel**: `https://cripto-quiz-app.vercel.app`
+- **Netlify**: `https://cripto-quiz-app.netlify.app`
+- **GitHub Pages**: `https://kaandradec.github.io/cripto-test`
+
+### 📱 Compartir la Aplicación
+
+Una vez desplegada, cualquier persona puede acceder a la aplicación simplemente visitando la URL. La aplicación es:
+
+- ✅ **Responsive**: Funciona en móviles y tablets
+- ✅ **PWA Ready**: Se puede instalar como app
+- ✅ **Sin backend**: No requiere servidor
+- ✅ **Rápida**: Optimizada para carga rápida
+- ✅ **Accesible**: Compatible con lectores de pantalla
+
+### 🔄 Actualizaciones Automáticas
+
+Con Vercel y Netlify, cada vez que hagas `git push` al repositorio:
+1. Se ejecuta el build automáticamente
+2. Se despliega la nueva versión
+3. La URL se actualiza con los cambios
+
+### 🎯 Para Educadores
+
+**Comparte fácilmente con estudiantes:**
+1. Envía la URL por email/WhatsApp/Teams
+2. Los estudiantes pueden usar inmediatamente sin instalación
+3. Funciona en cualquier dispositivo con navegador
+4. No requiere registro ni login
 
 ### Estructura de Archivos
 ```
