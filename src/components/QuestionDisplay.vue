@@ -3,6 +3,11 @@
     <!-- Enunciado de la pregunta -->
     <div class="question-statement">
       <h3>{{ question.enunciado }}</h3>
+      <!-- Indicador opcional de que las opciones están barajadas -->
+      <div v-if="showShuffleIndicator && hasOptions" class="shuffle-indicator">
+        <i class="shuffle-icon">🔀</i>
+        <span class="shuffle-text">Las opciones están en orden aleatorio</span>
+      </div>
     </div>
 
     <!-- Renderizado dinámico según el tipo de pregunta -->
@@ -38,7 +43,7 @@
         class="checkbox-group"
       >
         <label
-          v-for="opcion in question.opciones"
+          v-for="opcion in shuffledMultipleOptions"
           :key="opcion"
           class="checkbox-option"
           :class="{ disabled: isReviewed }"
@@ -131,6 +136,7 @@
 
 <script>
 import { ref, computed, watch } from "vue";
+import { deterministicShuffle } from "../utils/shuffle.js";
 
 export default {
   name: "QuestionDisplay",
@@ -153,10 +159,30 @@ export default {
       type: Boolean,
       default: false,
     },
+    showShuffleIndicator: {
+      type: Boolean,
+      default: false, // Por defecto desactivado para no distraer
+    },
   },
   emits: ["answer-changed"],
   setup(props, { emit }) {
     const localAnswer = ref(null);
+
+    // Generar una clave única para cada pregunta para mantener el orden consistente
+    const questionSeed = computed(() => {
+      return props.question.id || Math.random().toString(36).substr(2, 9);
+    });
+
+    // Detectar si la pregunta tiene opciones que puedan ser barajadas
+    const hasOptions = computed(() => {
+      return (
+        ["seleccion_unica", "seleccion_multiple", "verdadero_falso"].includes(
+          props.question.tipo
+        ) &&
+        (props.question.opciones?.length > 0 ||
+          props.question.tipo === "verdadero_falso")
+      );
+    });
 
     // Inicializar respuesta local según el tipo de pregunta
     const initializeAnswer = () => {
@@ -174,12 +200,23 @@ export default {
       }
     };
 
-    // Opciones disponibles para selección única y verdadero/falso
+    // Opciones disponibles para selección única y verdadero/falso (barajadas)
     const availableOptions = computed(() => {
       if (props.question.tipo === "verdadero_falso") {
-        return ["Verdadero", "Falso"];
+        // Para verdadero/falso, barajear solo si no está en orden alfabético
+        const options = ["Verdadero", "Falso"];
+        return deterministicShuffle(options, questionSeed.value);
       }
-      return props.question.opciones || [];
+
+      if (props.question.opciones && props.question.opciones.length > 0) {
+        // Barajear las opciones usando el ID de la pregunta como seed
+        return deterministicShuffle(
+          props.question.opciones,
+          questionSeed.value
+        );
+      }
+
+      return [];
     });
 
     // Extraer conceptos y definiciones para emparejar
@@ -207,6 +244,20 @@ export default {
       return [];
     });
 
+    // Opciones múltiples barajadas
+    const shuffledMultipleOptions = computed(() => {
+      if (
+        props.question.tipo === "seleccion_multiple" &&
+        props.question.opciones
+      ) {
+        return deterministicShuffle(
+          props.question.opciones,
+          questionSeed.value
+        );
+      }
+      return [];
+    });
+
     const definitions = computed(() => {
       if (props.question.tipo !== "emparejar" || !props.question.opciones) {
         return [];
@@ -214,14 +265,19 @@ export default {
 
       // Estructura del JSON: opciones.definiciones array
       if (props.question.opciones.definiciones) {
-        return props.question.opciones.definiciones;
+        // Barajear las definiciones también para hacerlo más desafiante
+        return deterministicShuffle(
+          props.question.opciones.definiciones,
+          questionSeed.value
+        );
       }
 
       // Si respuesta_correcta es un array de objetos con concepto y definicion
       if (Array.isArray(props.question.respuesta_correcta)) {
-        return props.question.respuesta_correcta
+        const defs = props.question.respuesta_correcta
           .map((item) => item.definicion)
           .filter(Boolean);
+        return deterministicShuffle(defs, questionSeed.value);
       }
 
       // Fallback: usar conceptos como definiciones
@@ -290,6 +346,8 @@ export default {
     return {
       localAnswer,
       availableOptions,
+      shuffledMultipleOptions,
+      hasOptions,
       concepts,
       definitions,
       getCorrectMatches,
@@ -317,6 +375,27 @@ export default {
   font-size: 1.25rem;
   line-height: 1.5;
   margin: 0;
+}
+
+.shuffle-indicator {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 1rem;
+  padding: 0.5rem 0.75rem;
+  background: rgba(102, 126, 234, 0.1);
+  border: 1px solid rgba(102, 126, 234, 0.2);
+  border-radius: 6px;
+  font-size: 0.875rem;
+  color: #667eea;
+}
+
+.shuffle-icon {
+  font-size: 1rem;
+}
+
+.shuffle-text {
+  font-weight: 500;
 }
 
 .question-content {
