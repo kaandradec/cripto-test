@@ -1,0 +1,1377 @@
+{
+  "banco_de_preguntas": [
+    {
+      "id": "U1P1",
+      "unidad": 1,
+      "enunciado": "¿Cuál de las siguientes ciencias son las más utilizadas por la Criptografía? (Elija 2)",
+      "tipo": "seleccion_multiple",
+      "opciones": [
+        "Programación",
+        "Matemáticas",
+        "Física",
+        "Computación",
+        "Cálculo"
+      ],
+      "respuesta_correcta": [
+        "Matemáticas",
+        "Computación"
+      ]
+    },
+    {
+      "id": "U1P2",
+      "unidad": 1,
+      "enunciado": "¿Cuál de los siguientes algoritmos tiene una clave con longitud de 32 bits?",
+      "tipo": "seleccion_unica",
+      "opciones": [
+        "Data Encryption Standard",
+        "Ninguna de las opciones es correcta",
+        "Triple Data Encryption Standard",
+        "Advanced Encryption Standard"
+      ],
+      "respuesta_correcta": "Ninguna de las opciones es correcta"
+    },
+    {
+      "id": "U1P3",
+      "unidad": 1,
+      "enunciado": "A la criptografía ...... se la conoce como Criptografía de clave pública",
+      "tipo": "rellenar_espacio",
+      "opciones": [],
+      "respuesta_correcta": [
+        "Asimétrica"
+      ]
+    },
+    {
+      "id": "U1P4",
+      "unidad": 1,
+      "enunciado": "Si se cifra el mensaje ESTO ES UNA PRUEBA con 3 filas, el criptograma será:",
+      "tipo": "seleccion_unica",
+      "opciones": [
+        "ETEUA REASO SNPUB",
+        "EOUPE SENRB TSAUA",
+        "ESRSU UTNEO ABEPA",
+        "Ninguna de las respuestas es correcta",
+        "EEAES SPBTU RAONU"
+      ],
+      "respuesta_correcta": "EOUPE SENRB TSAUA"
+    },
+    {
+      "id": "U1P5",
+      "unidad": 1,
+      "enunciado": "Es un área que se dedica al estudio de ocultar datos",
+      "tipo": "seleccion_unica",
+      "opciones": [
+        "Criptografía",
+        "Criptoanálisis",
+        "Esteganografía",
+        "Criptología"
+      ],
+      "respuesta_correcta": "Esteganografía"
+    },
+    {
+      "id": "U1P6",
+      "unidad": 1,
+      "enunciado": "Blockchain es un ejemplo de criptografía de clave:",
+      "tipo": "rellenar_espacio",
+      "opciones": [],
+      "respuesta_correcta": [
+        "Asimétrica"
+      ]
+    },
+    {
+      "id": "U1P7",
+      "unidad": 1,
+      "enunciado": "¿Es la Criptografía la solución a todos los problemas de seguridad?",
+      "tipo": "verdadero_falso",
+      "opciones": [
+        "Verdadero",
+        "Falso"
+      ],
+      "respuesta_correcta": "Falso"
+    },
+    {
+      "id": "U1P8",
+      "unidad": 1,
+      "enunciado": "La Criptografía ...... es aquella en la que se emite una única clave entre emisor y receptor.",
+      "tipo": "rellenar_espacio",
+      "opciones": [],
+      "respuesta_correcta": [
+        "Simétrica"
+      ]
+    },
+    {
+      "id": "U1P9",
+      "unidad": 1,
+      "enunciado": "¿Cuáles de los siguientes son Algoritmos de cifrado simétrico? (Elija 3)",
+      "tipo": "seleccion_multiple",
+      "opciones": [
+        "DSA",
+        "ECDSA",
+        "ElGamal",
+        "FEAL",
+        "Blowfish",
+        "Serpent"
+      ],
+      "respuesta_correcta": [
+        "FEAL",
+        "Serpent",
+        "Blowfish"
+      ]
+    },
+    {
+      "id": "U1P10",
+      "unidad": 1,
+      "enunciado": "Asocie cada uno de los conceptos con su definición:",
+      "tipo": "emparejar",
+      "opciones": {
+        "conceptos": [
+          "Esteganoanálisis",
+          "Criptoanálisis",
+          "Criptografía",
+          "Esteganografía"
+        ],
+        "definiciones": [
+          "Estudia técnicas para detectar mensajes ocultos con esteganografía",
+          "Estudia técnicas para descifrar un mensaje protegido con criptografía, explotando vulnerabilidades existentes en la protección de la información",
+          "Estudia técnicas y métodos para proteger la información",
+          "Estudia técnicas para ocultar la existencia de un mensaje"
+        ]
+      },
+      "respuesta_correcta": [
+        {
+          "concepto": "Esteganoanálisis",
+          "definicion": "Estudia técnicas para detectar mensajes ocultos con esteganografía"
+        },
+        {
+          "concepto": "Criptoanálisis",
+          "definicion": "Estudia técnicas para descifrar un mensaje protegido con criptografía, explotando vulnerabilidades existentes en la protección de la información"
+        },
+        {
+          "concepto": "Criptografía",
+          "definicion": "Estudia técnicas y métodos para proteger la información"
+        },
+        {
+          "concepto": "Esteganografía",
+          "definicion": "Estudia técnicas para ocultar la existencia de un mensaje"
+        }
+      ]
+    },
+    {
+      "id": "U1P11",
+      "unidad": 1,
+      "enunciado": "¿Cuál de los siguientes algoritmos tiene una clave con longitud de 56 bits?",
+      "tipo": "seleccion_unica",
+      "opciones": [
+        "Triple Data Encryption Standard",
+        "Data Encryption Standard",
+        "Ninguna de las opciones es correcta",
+        "Advanced Encryption Standard"
+      ],
+      "respuesta_correcta": "Data Encryption Standard"
+    },
+    {
+      "id": "U1P12",
+      "unidad": 1,
+      "enunciado": "Kerberos es un protocolo que se basa en criptografía de clave:",
+      "tipo": "rellenar_espacio",
+      "opciones": [],
+      "respuesta_correcta": [
+        "Simétrica"
+      ]
+    },
+    {
+      "id": "U1P13",
+      "unidad": 1,
+      "enunciado": "Asocie la técnica de cifrado con su descripción:",
+      "tipo": "emparejar",
+      "opciones": {
+        "conceptos": [
+          "Técnica de cifrado que agrupa datos en grupos de longitud fija",
+          "Técnica de cifrado que agrupa datos en grupos de 1 bit o 1 byte"
+        ],
+        "definiciones": [
+          "Block Cipher",
+          "Stream Cipher"
+        ]
+      },
+      "respuesta_correcta": [
+        {
+          "concepto": "Técnica de cifrado que agrupa datos en grupos de longitud fija",
+          "definicion": "Block Cipher"
+        },
+        {
+          "concepto": "Técnica de cifrado que agrupa datos en grupos de 1 bit o 1 byte",
+          "definicion": "Stream Cipher"
+        }
+      ]
+    },
+    {
+      "id": "U1P14",
+      "unidad": 1,
+      "enunciado": "La Firma Electrónica es un ejemplo de criptografía de clave:",
+      "tipo": "rellenar_espacio",
+      "opciones": [],
+      "respuesta_correcta": [
+        "Asimétrica"
+      ]
+    },
+    {
+      "id": "U1P15",
+      "unidad": 1,
+      "enunciado": "Es la rama de Criptografía que estudia las técnicas para romper códigos cifrados:",
+      "tipo": "rellenar_espacio",
+      "opciones": [],
+      "respuesta_correcta": [
+        "Criptoanálisis"
+      ]
+    },
+    {
+      "id": "U1P16",
+      "unidad": 1,
+      "enunciado": "¿Las Funciones Hash permiten encriptar y desencriptar un mensaje?",
+      "tipo": "verdadero_falso",
+      "opciones": [
+        "Verdadero",
+        "Falso"
+      ],
+      "respuesta_correcta": "Falso"
+    },
+    {
+      "id": "U1P17",
+      "unidad": 1,
+      "enunciado": "En el cifrado por filas:",
+      "tipo": "seleccion_unica",
+      "opciones": [
+        "Se escribe el texto en claro por columnas y se lee al revés",
+        "Se escribe el texto en claro por filas y se lee por columnas",
+        "Se escribe el texto en claro por columnas y se lee por filas",
+        "Se escribe el texto en claro por filas y se lee en saltos de dos"
+      ],
+      "respuesta_correcta": "Se escribe el texto en claro por columnas y se lee por filas"
+    },
+    {
+      "id": "U1P18",
+      "unidad": 1,
+      "enunciado": "Un cifrado en el que unidades de texto plano se reemplazan siguiendo un esquema bien definido; ya sea de una sola letra, pares de letras, tríos de letras o mezclas de lo anterior, se conoce como:",
+      "tipo": "seleccion_unica",
+      "opciones": [
+        "Cifrado de Vigenère",
+        "Cifrado por Sustitución",
+        "Cifrado por Libro",
+        "Cifrado por Transposición"
+      ],
+      "respuesta_correcta": "Cifrado por Sustitución"
+    },
+    {
+      "id": "U1P19",
+      "unidad": 1,
+      "enunciado": "Un cifrado en el que unidades de texto plano se cambian de posición siguiendo un esquema bien definido; ya sea de una sola letra, pares de letras, tríos de letras o mezclas de lo anterior, se conoce como cifrado por ...",
+      "tipo": "rellenar_espacio",
+      "opciones": [],
+      "respuesta_correcta": [
+        "Transposición"
+      ]
+    },
+    {
+      "id": "U1P20",
+      "unidad": 1,
+      "enunciado": "¿Cuáles de los siguientes son Algoritmos de cifrado asimétrico? (Elija 3)",
+      "tipo": "seleccion_multiple",
+      "opciones": [
+        "Advanced Encryption Standard",
+        "Digital Signature Algorithm",
+        "Taher ElGamal",
+        "Diffie Hellman",
+        "Software-Optimized Encryption Algorithm",
+        "Data Encryption Algorithm"
+      ],
+      "respuesta_correcta": [
+        "Diffie Hellman",
+        "Digital Signature Algorithm",
+        "Taher ElGamal"
+      ]
+    },
+    {
+      "id": "U1P21",
+      "unidad": 1,
+      "enunciado": "En la Criptografía Simétrica el método de protección de la clave es fácilmente vulnerable, mientras que en la Criptografía Asimétrica las claves tienen un código de encriptación que hace difícil romperlas.",
+      "tipo": "emparejar",
+      "opciones": {
+        "conceptos": ["En la Criptografía Simétrica", "en la Criptografía Asimétrica"],
+        "definiciones": ["el método de protección de la clave es fácilmente vulnerable", "las claves tienen un código de encriptación que hace difícil romperlas"]
+      },
+      "respuesta_correcta": [
+        { "concepto": "En la Criptografía Simétrica", "definicion": "el método de protección de la clave es fácilmente vulnerable" },
+        { "concepto": "en la Criptografía Asimétrica", "definicion": "las claves tienen un código de encriptación que hace difícil romperlas" }
+      ]
+    },
+    {
+      "id": "U1P22",
+      "unidad": 1,
+      "enunciado": "El concepto opuesto a la Criptografía es:",
+      "tipo": "rellenar_espacio",
+      "opciones": [],
+      "respuesta_correcta": ["Criptoanálisis"]
+    },
+    {
+      "id": "U1P23",
+      "unidad": 1,
+      "enunciado": "¿Cuál es el mensaje del criptograma NMHGKQTBK, utilizando la clave UCE y una tabla de Vigenère?",
+      "tipo": "rellenar_espacio",
+      "opciones": [],
+      "respuesta_correcta": ["HOLAMUNDO"]
+    },
+    {
+      "id": "U1P24",
+      "unidad": 1,
+      "enunciado": "En el cifrado por columnas:",
+      "tipo": "seleccion_unica",
+      "opciones": [
+        "Se escribe el texto en claro por columnas y se lee por filas",
+        "Se escribe el texto en claro por filas y se lee por columnas",
+        "Se escribe el texto en claro por columnas y se lee al revés"
+      ],
+      "respuesta_correcta": "Se escribe el texto en claro por filas y se lee por columnas"
+    },
+    {
+      "id": "U1P25",
+      "unidad": 1,
+      "enunciado": "¿Cuál es el significado de las siglas SSL?",
+      "tipo": "rellenar_espacio",
+      "opciones": [],
+      "respuesta_correcta": ["Secure Sockets Layer"]
+    },
+    {
+      "id": "U1P26",
+      "unidad": 1,
+      "enunciado": "Al desarrollo de un conjunto de técnicas que permiten alterar y modificar mensajes o archivos con el objetivo de que no puedan ser leídos por usuarios no autorizados, se llama:",
+      "tipo": "rellenar_espacio",
+      "opciones": [],
+      "respuesta_correcta": ["Criptografía"]
+    },
+    {
+      "id": "U2P1",
+      "unidad": 2,
+      "enunciado": "¿Qué significan las siglas EAP?",
+      "tipo": "rellenar_espacio",
+      "opciones": [],
+      "respuesta_correcta": [
+        "Extensible Authentication Protocol"
+      ]
+    },
+    {
+      "id": "U2P2",
+      "unidad": 2,
+      "enunciado": "Diffie-Hellman es un ejemplo de:",
+      "tipo": "rellenar_espacio",
+      "opciones": [],
+      "respuesta_correcta": [
+        "Algoritmo Asimétrico"
+      ]
+    },
+    {
+      "id": "U2P3",
+      "unidad": 2,
+      "enunciado": "¿En cuál de las siguientes capas del modelo OSI se encuentra el Protocolo EAP?",
+      "tipo": "seleccion_unica",
+      "opciones": [
+        "Sesión",
+        "Aplicación",
+        "Enlace",
+        "Transporte",
+        "Red"
+      ],
+      "respuesta_correcta": "Enlace"
+    },
+    {
+      "id": "U2P4",
+      "unidad": 2,
+      "enunciado": "A los Algoritmos .......... también se los conoce como Algoritmos de clave privada",
+      "tipo": "rellenar_espacio",
+      "opciones": [],
+      "respuesta_correcta": [
+        "simétricos"
+      ]
+    },
+    {
+      "id": "U2P5",
+      "unidad": 2,
+      "enunciado": "¿Los protocolos criptográficos garantizan la seguridad total de los datos que transitan en el Internet?",
+      "tipo": "verdadero_falso",
+      "opciones": [
+        "Verdadero",
+        "Falso"
+      ],
+      "respuesta_correcta": "Falso"
+    },
+    {
+      "id": "U2P6",
+      "unidad": 2,
+      "enunciado": "¿A qué hacen referencia las siglas SHA?",
+      "tipo": "rellenar_espacio",
+      "opciones": [],
+      "respuesta_correcta": [
+        "Secure Hash Algorithm"
+      ]
+    },
+    {
+      "id": "U2P7",
+      "unidad": 2,
+      "enunciado": "¿Cuál de los siguientes protocolos es históricamente el más utilizado para las comunicaciones en Internet?",
+      "tipo": "seleccion_unica",
+      "opciones": [
+        "HTTPS",
+        "SSH",
+        "TCP/IP",
+        "HTTP"
+      ],
+      "respuesta_correcta": "TCP/IP"
+    },
+    {
+      "id": "U2P8",
+      "unidad": 2,
+      "enunciado": "¿En cuál de las siguientes capas del modelo OSI se encuentra el Protocolo AKA?",
+      "tipo": "seleccion_unica",
+      "opciones": [
+        "Red",
+        "Enlace",
+        "Sesión",
+        "Aplicación",
+        "Transporte"
+      ],
+      "respuesta_correcta": "Enlace"
+    },
+    {
+      "id": "U2P9",
+      "unidad": 2,
+      "enunciado": "Uno de los objetivos de los Algoritmos Criptográficos es proporcionar:",
+      "tipo": "rellenar_espacio",
+      "opciones": [],
+      "respuesta_correcta": [
+        "Autenticación"
+      ]
+    },
+    {
+      "id": "U2P10",
+      "unidad": 2,
+      "enunciado": "¿Qué significan las siglas PLP, en el ámbito de protección de redes inalámbricas?",
+      "tipo": "rellenar_espacio",
+      "opciones": [],
+      "respuesta_correcta": [
+        "Packet Layer Protocol"
+      ]
+    },
+    {
+      "id": "U2P11",
+      "unidad": 2,
+      "enunciado": "¿En cuál de las siguientes capas del modelo OSI se encuentra el Protocolo TLS?",
+      "tipo": "seleccion_unica",
+      "opciones": [
+        "Transporte",
+        "Red",
+        "Sesión",
+        "Enlace",
+        "Aplicación"
+      ],
+      "respuesta_correcta": "Transporte"
+    },
+    {
+      "id": "U2P12",
+      "unidad": 2,
+      "enunciado": "¿Qué significan las siglas TLS?",
+      "tipo": "rellenar_espacio",
+      "opciones": [],
+      "respuesta_correcta": [
+        "Transport Layer Security"
+      ]
+    },
+    {
+      "id": "U2P13",
+      "unidad": 2,
+      "enunciado": "¿En cuál de las siguientes capas del modelo OSI se encuentra el Protocolo IPsec?",
+      "tipo": "seleccion_unica",
+      "opciones": [
+        "Transporte",
+        "Aplicación",
+        "Enlace",
+        "Red",
+        "Sesión"
+      ],
+      "respuesta_correcta": "Red"
+    },
+    {
+      "id": "U2P14",
+      "unidad": 2,
+      "enunciado": "¿En cuál de las siguientes capas del modelo OSI se encuentra el Protocolo SSL?",
+      "tipo": "seleccion_unica",
+      "opciones": [
+        "Sesión",
+        "Transporte",
+        "Aplicación",
+        "Red",
+        "Enlace"
+      ],
+      "respuesta_correcta": "Transporte"
+    },
+    {
+      "id": "U2P15",
+      "unidad": 2,
+      "enunciado": "¿Los protocolos criptográficos impiden a usuarios no autorizados acceder a datos de una red de telecomunicaciones?",
+      "tipo": "verdadero_falso",
+      "opciones": [
+        "Verdadero",
+        "Falso"
+      ],
+      "respuesta_correcta": "Verdadero"
+    },
+    {
+      "id": "U2P16",
+      "unidad": 2,
+      "enunciado": "AES es un ejemplo de:",
+      "tipo": "rellenar_espacio",
+      "opciones": [],
+      "respuesta_correcta": [
+        "Algoritmo Simétrico"
+      ]
+    },
+    {
+      "id": "U2P17",
+      "unidad": 2,
+      "enunciado": "MD5 es un ejemplo de:",
+      "tipo": "rellenar_espacio",
+      "opciones": [],
+      "respuesta_correcta": [
+        "Función Hash"
+      ]
+    },
+    {
+      "id": "U2P18",
+      "unidad": 2,
+      "enunciado": "¿Qué significan las siglas DES?",
+      "tipo": "rellenar_espacio",
+      "opciones": [],
+      "respuesta_correcta": [
+        "Data Encryption Standard"
+      ]
+    },
+    {
+      "id": "U2P19",
+      "unidad": 2,
+      "enunciado": "¿A qué apellidos hacen referencia las siglas RSA?",
+      "tipo": "rellenar_espacio",
+      "opciones": [],
+      "respuesta_correcta": [
+        "Rivest Shamir Adleman"
+      ]
+    },
+    {
+      "id": "U2P20",
+      "unidad": 2,
+      "enunciado": "A los Algoritmos Asimétricos también se los conoce como Algoritmos de clave ..........",
+      "tipo": "rellenar_espacio",
+      "opciones": [],
+      "respuesta_correcta": [
+        "pública"
+      ]
+    },
+    {
+      "id": "U3P1",
+      "unidad": 3,
+      "enunciado": "La ............ es el conjunto de acciones que se toman para permitir el acceso de usuarios autorizados a los sistemas",
+      "tipo": "rellenar_espacio",
+      "opciones": [],
+      "respuesta_correcta": [
+        "Confidencialidad"
+      ]
+    },
+    {
+      "id": "U3P2",
+      "unidad": 3,
+      "enunciado": "¿Cómo se llama un software escrito para aprovechar una vulnerabilidad de seguridad conocida?",
+      "tipo": "seleccion_unica",
+      "opciones": [
+        "Firewall",
+        "Exploit",
+        "Update",
+        "Antivirus"
+      ],
+      "respuesta_correcta": "Exploit"
+    },
+    {
+      "id": "U3P3",
+      "unidad": 3,
+      "enunciado": "Empareje cada tipo de malware con su descripción:",
+      "tipo": "emparejar",
+      "opciones": {
+        "conceptos": [
+          "Gusano",
+          "Virus",
+          "Spyware",
+          "Adware",
+          "Ransomware"
+        ],
+        "definiciones": [
+          "Código malicioso que se replica de forma independiente aprovechando las vulnerabilidades de las redes",
+          "Código malicioso que se adjunta a programas legítimos y que suele propagarse a través de unidades USB, soportes ópticos, redes compartidas o correo electrónico",
+          "Programa malicioso diseñado para rastrear la actividad en línea y capturar datos",
+          "Software que ofrece automáticamente anuncios publicitarios",
+          "Malware que mantiene cautivo un sistema informático hasta que se realiza un pago al atacante"
+        ]
+      },
+      "respuesta_correcta": [
+        {
+          "concepto": "Gusano",
+          "definicion": "Código malicioso que se replica de forma independiente aprovechando las vulnerabilidades de las redes"
+        },
+        {
+          "concepto": "Virus",
+          "definicion": "Código malicioso que se adjunta a programas legítimos y que suele propagarse a través de unidades USB, soportes ópticos, redes compartidas o correo electrónico"
+        },
+        {
+          "concepto": "Spyware",
+          "definicion": "Programa malicioso diseñado para rastrear la actividad en línea y capturar datos"
+        },
+        {
+          "concepto": "Adware",
+          "definicion": "Software que ofrece automáticamente anuncios publicitarios"
+        },
+        {
+          "concepto": "Ransomware",
+          "definicion": "Malware que mantiene cautivo un sistema informático hasta que se realiza un pago al atacante"
+        }
+      ]
+    },
+    {
+      "id": "U3P4",
+      "unidad": 3,
+      "enunciado": "Al proceso que garantiza la confidencialidad de los datos que circulan a través de la red, se lo conoce como ...",
+      "tipo": "rellenar_espacio",
+      "opciones": [],
+      "respuesta_correcta": [
+        "cifrado"
+      ]
+    },
+    {
+      "id": "U3P5",
+      "unidad": 3,
+      "enunciado": "¿Cómo se puede mantener el historial de navegación personal oculto a otros usuarios en un ordenador compartido?",
+      "tipo": "seleccion_unica",
+      "opciones": [
+        "Enviando los archivos descargados a la papelera de reciclaje",
+        "Reiniciando el ordenador después de cerrar el navegador web",
+        "Utilizando el navegador web en modo de navegación privada",
+        "Utilizando sólo conexiones cifradas para acceder a sitios web"
+      ],
+      "respuesta_correcta": "Utilizando el navegador web en modo de navegación privada"
+    },
+    {
+      "id": "U3P6",
+      "unidad": 3,
+      "enunciado": "La seguridad ........ se encarga de la protección de los datos contra desastres naturales",
+      "tipo": "rellenar_espacio",
+      "opciones": [],
+      "respuesta_correcta": [
+        "Física"
+      ]
+    },
+    {
+      "id": "U3P7",
+      "unidad": 3,
+      "enunciado": "¿Cuál de los siguientes es un ejemplo de autenticación de dos factores?",
+      "tipo": "seleccion_unica",
+      "opciones": [
+        "El número de cuenta bancaria y el nombre",
+        "La respuesta a una pregunta secreta y la contraseña",
+        "La huella dactilar y la contraseña",
+        "La contraseña y el nombre de usuario"
+      ],
+      "respuesta_correcta": "La huella dactilar y la contraseña"
+    },
+    {
+      "id": "U3P8",
+      "unidad": 3,
+      "enunciado": "Un conjunto de cambios realizados en cualquier aplicación o sistema operativo con el objetivo de actualizarlo, arreglarlo o mejorarlo suele denominarse:",
+      "tipo": "rellenar_espacio",
+      "opciones": [],
+      "respuesta_correcta": [
+        "Parche"
+      ]
+    },
+    {
+      "id": "U3P9",
+      "unidad": 3,
+      "enunciado": "La informática forense no es una rama de la ciberseguridad y de las ciencias forenses.",
+      "tipo": "verdadero_falso",
+      "opciones": [
+        "Verdadero",
+        "Falso"
+      ],
+      "respuesta_correcta": "Falso"
+    },
+    {
+      "id": "U3P10",
+      "unidad": 3,
+      "enunciado": "Al código malicioso que se replica de forma independiente aprovechando las vulnerabilidades de las redes, se lo llama:",
+      "tipo": "rellenar_espacio",
+      "opciones": [],
+      "respuesta_correcta": [
+        "Gusano",
+        "Worm"
+      ]
+    },
+    {
+      "id": "U3P11",
+      "unidad": 3,
+      "enunciado": "¿Para qué son útiles las habilidades desarrolladas por los profesionales de la ciberseguridad?",
+      "tipo": "seleccion_unica",
+      "opciones": [
+        "Los profesionales de la ciberseguridad desarrollan muchas habilidades que sólo pueden ser utilizadas para el bien",
+        "Los profesionales de la ciberseguridad desarrollan muchas habilidades que sólo pueden usarse para hacer daño",
+        "Los profesionales de la ciberseguridad desarrollan muchas habilidades que pueden ser utilizadas para hacer el bien o el mal",
+        "Los profesionales de la ciberseguridad desarrollan muchas habilidades que no pueden utilizarse para hacer daño"
+      ],
+      "respuesta_correcta": "Los profesionales de la ciberseguridad desarrollan muchas habilidades que pueden ser utilizadas para hacer el bien o el mal"
+    },
+    {
+      "id": "U3P12",
+      "unidad": 3,
+      "enunciado": "La ............ protege la integridad y privacidad de los datos y equipos informáticos",
+      "tipo": "rellenar_espacio",
+      "opciones": [],
+      "respuesta_correcta": [
+        "Seguridad Informática"
+      ]
+    },
+    {
+      "id": "U3P13",
+      "unidad": 3,
+      "enunciado": "De acuerdo con el siguiente ejemplo, identifique el tipo de atacante: \"Este atacante utiliza herramientas existentes en Internet para lanzar un ciberataque\"",
+      "tipo": "seleccion_unica",
+      "opciones": [
+        "Script Kiddie",
+        "Gray Hat",
+        "White Hat",
+        "Black Hat",
+        "Hacktivist"
+      ],
+      "respuesta_correcta": "Script Kiddie"
+    },
+    {
+      "id": "U3P14",
+      "unidad": 3,
+      "enunciado": "De acuerdo con el siguiente ejemplo, identifique el tipo de atacante: \"El trabajo de este atacante es identificar las debilidades en el sistema informático de una empresa\"",
+      "tipo": "seleccion_unica",
+      "opciones": [
+        "Gray Hat",
+        "White Hat",
+        "Black Hat",
+        "Hacktivist",
+        "Script Kiddie"
+      ],
+      "respuesta_correcta": "White Hat"
+    },
+    {
+      "id": "U3P15",
+      "unidad": 3,
+      "enunciado": "La ............ protege la integridad y privacidad de los datos tanto físicos como digitales",
+      "tipo": "rellenar_espacio",
+      "opciones": [],
+      "respuesta_correcta": [
+        "Seguridad de la Información"
+      ]
+    },
+    {
+      "id": "U3P16",
+      "unidad": 3,
+      "enunciado": "Al proceso de control de los tiempos y usuarios que han accedido a un aplicación, se lo conoce como:",
+      "tipo": "rellenar_espacio",
+      "opciones": [],
+      "respuesta_correcta": [
+        "archivos de registro"
+      ]
+    },
+    {
+      "id": "U3P17",
+      "unidad": 3,
+      "enunciado": "Técnica que consiste en dejar abandonado un dispositivo infectado con software malicioso (USB, CD o teléfono móvil) en algún lugar para tentar a una víctima a ver lo que contiene:",
+      "tipo": "rellenar_espacio",
+      "opciones": [],
+      "respuesta_correcta": [
+        "Baiting"
+      ]
+    },
+    {
+      "id": "U3P18",
+      "unidad": 3,
+      "enunciado": "¿Qué tecnología de seguridad crea un token que permite a un usuario iniciar sesión en una aplicación web deseada, utilizando las credenciales de un sitio web de redes sociales?",
+      "tipo": "seleccion_unica",
+      "opciones": [
+        "Gestor de contraseñas",
+        "VPN",
+        "Autorización abierta",
+        "IPS",
+        "Navegación privada"
+      ],
+      "respuesta_correcta": "Autorización abierta"
+    },
+    {
+      "id": "U3P19",
+      "unidad": 3,
+      "enunciado": "¿Cuál es el objetivo principal de un ataque DoS?",
+      "tipo": "seleccion_unica",
+      "opciones": [
+        "Facilitar el acceso a redes externas",
+        "Obtener todas las direcciones de red del servidor",
+        "Impedir que el servidor sea capaz de gestionar más peticiones",
+        "Examinar los datos del servidor objetivo"
+      ],
+      "respuesta_correcta": "Impedir que el servidor sea capaz de gestionar más peticiones"
+    },
+    {
+      "id": "U3P20",
+      "unidad": 3,
+      "enunciado": "¿Cuál de los siguientes conceptos tiene que ver con la identificación e investigación de las características del software malicioso?",
+      "tipo": "seleccion_unica",
+      "opciones": [
+        "Seguridad Informática",
+        "Antivirus",
+        "Ciberinteligencia",
+        "Análisis de malware"
+      ],
+      "respuesta_correcta": "Análisis de malware"
+    },
+    {
+      "id": "U4P1",
+      "unidad": 4,
+      "enunciado": "La autenticación:",
+      "tipo": "seleccion_unica",
+      "opciones": [
+        "Ninguna de las respuestas",
+        "Proporciona y asigna las cadenas únicas de números que constituyen las \"claves\" utilizadas en los certificados digitales para la autenticación",
+        "Puede ser una empresa emisora externa (como VeriSign).",
+        "Estas claves se utilizan para encriptar y desencriptar información sensible o confidencial entrante y saliente en línea"
+      ],
+      "respuesta_correcta": "Ninguna de las respuestas"
+    },
+    {
+      "id": "U4P2",
+      "unidad": 4,
+      "enunciado": "El off site es un lugar alternativo a la sede principal, preparado con los equipos y facilidades idénticas a la sede principal para permitan operar en el momento en que ocurra un evento de fuerza mayor sin inconveniente alguno y garantizar continuidad a las operaciones críticas del negocio.",
+      "tipo": "verdadero_falso",
+      "opciones": [
+        "Verdadero",
+        "Falso"
+      ],
+      "respuesta_correcta": "Falso"
+    },
+    {
+      "id": "U4P3",
+      "unidad": 4,
+      "enunciado": "¿Qué medida de seguridad se encuentra generalmente dentro y fuera de un centro de datos de una empresa?",
+      "tipo": "seleccion_unica",
+      "opciones": [
+        "Una puerta",
+        "Videovigilancia continua",
+        "Acceso biométrico",
+        "Sensores de salida",
+        "Trampas de seguridad"
+      ],
+      "respuesta_correcta": "Videovigilancia continua"
+    },
+    {
+      "id": "U4P4",
+      "unidad": 4,
+      "enunciado": "¿Cuáles son métodos de autentificación?",
+      "tipo": "seleccion_multiple",
+      "opciones": [
+        "VPN",
+        "Passwords",
+        "IPSec",
+        "Users ID"
+      ],
+      "respuesta_correcta": [
+        "Passwords",
+        "Users ID"
+      ]
+    },
+    {
+      "id": "U4P5",
+      "unidad": 4,
+      "enunciado": "Un cortafuegos es la parte de un sistema informático o una red informática que está diseñada para bloquear el acceso no autorizado",
+      "tipo": "verdadero_falso",
+      "opciones": [
+        "Verdadero",
+        "Falso"
+      ],
+      "respuesta_correcta": "Verdadero"
+    },
+    {
+      "id": "U4P6",
+      "unidad": 4,
+      "enunciado": "Al considerar la seguridad de la red, ¿Cuál es el recurso más valioso de una organización?",
+      "tipo": "seleccion_unica",
+      "opciones": [
+        "Recursos financieros",
+        "Datos",
+        "Personal",
+        "Clientes"
+      ],
+      "respuesta_correcta": "Datos"
+    },
+    {
+      "id": "U4P7",
+      "unidad": 4,
+      "enunciado": "La arquitectura de una PKI supone la aplicación de diversas tecnologías y procesos interdependientes que permiten expedir, validar, renovar y revocar certificados",
+      "tipo": "verdadero_falso",
+      "opciones": [
+        "Verdadero",
+        "Falso"
+      ],
+      "respuesta_correcta": "Verdadero"
+    },
+    {
+      "id": "U4P8",
+      "unidad": 4,
+      "enunciado": "¿Cuál de las siguientes NO es una función del Blue Team?",
+      "tipo": "seleccion_unica",
+      "opciones": [
+        "Emular un ataque lo más realista y caótico posible",
+        "Educar al personal sobre las políticas de seguridad",
+        "Documentar exactamente lo que debe proteger",
+        "Llevar a cabo una evaluación de riesgos",
+        "Identificar fallos de seguridad y/o vulnerabilidades"
+      ],
+      "respuesta_correcta": "Emular un ataque lo más realista y caótico posible"
+    },
+    {
+      "id": "U4P9",
+      "unidad": 4,
+      "enunciado": "Un sistema PKI está basado en una información que el usuario conoce, como su contraseña, y un dispositivo externo que suele adoptar la forma de una tarjeta de crédito o una clave que el usuario puede tomar",
+      "tipo": "verdadero_falso",
+      "opciones": [
+        "Verdadero",
+        "Falso"
+      ],
+      "respuesta_correcta": "Falso"
+    },
+    {
+      "id": "U4P10",
+      "unidad": 4,
+      "enunciado": "¿Cuál de los siguientes items pertenece al procedimiento de la Política de Seguridad de Uso de licencias de Software?",
+      "tipo": "seleccion_multiple",
+      "opciones": [
+        "Asegurarse de que todo el software usado por los usuarios bajo su supervisión esta adecuadamente licenciado",
+        "Capacitación anual a los usuarios incluyendo el manual de usuario y cualquier otra documentación que lo acompañe que esclarezca el uso adecuado del software",
+        "Los usuarios deben tener conocimiento sobre distribución y uso correcto del software que posee la universidad",
+        "Repartir una copia de esta política/s a los encargados y/o usuarios de la universidad"
+      ],
+      "respuesta_correcta": [
+        "Asegurarse de que todo el software usado por los usuarios bajo su supervisión esta adecuadamente licenciado",
+        "Capacitación anual a los usuarios incluyendo el manual de usuario y cualquier otra documentación que lo acompañe que esclarezca el uso adecuado del software",
+        "Los usuarios deben tener conocimiento sobre distribución y uso correcto del software que posee la universidad",
+        "Repartir una copia de esta política/s a los encargados y/o usuarios de la universidad"
+      ]
+    },
+    {
+      "id": "U4P11",
+      "unidad": 4,
+      "enunciado": "Los certificados normalmente contienen la siguiente información:",
+      "tipo": "seleccion_multiple",
+      "opciones": [
+        "El valor de clave pública del sujeto",
+        "La firma digital del emisor",
+        "Información de identificación del emisor",
+        "La información de identificación del sujeto, como el nombre y la dirección de correo electrónico",
+        "El período de validez"
+      ],
+      "respuesta_correcta": [
+        "El valor de clave pública del sujeto",
+        "La firma digital del emisor",
+        "Información de identificación del emisor",
+        "La información de identificación del sujeto, como el nombre y la dirección de correo electrónico",
+        "El período de validez"
+      ]
+    },
+    {
+      "id": "U4P12",
+      "unidad": 4,
+      "enunciado": "Con base en los resultados de la evaluación, debes proteger y preservar los equipos de tu empresa. Por ejemplo, querrás implementar medidas para proteger tus equipos de nuevos daños y de los riesgos de robo.",
+      "tipo": "verdadero_falso",
+      "opciones": [
+        "Verdadero",
+        "Falso"
+      ],
+      "respuesta_correcta": "Verdadero"
+    },
+    {
+      "id": "U4P13",
+      "unidad": 4,
+      "enunciado": "El marco normativo de las normas de seguridad son:",
+      "tipo": "seleccion_multiple",
+      "opciones": [
+        "Normas de Auditoria Generalmente Aceptadas (NAGAs).",
+        "Normas Ecuatorianas de Auditoría Gubernamental (NEAG).",
+        "COBIT",
+        "Normas Internacionales de Auditoria y Aseguramiento (NIAAs).",
+        "ITIL"
+      ],
+      "respuesta_correcta": [
+        "Normas Internacionales de Auditoria y Aseguramiento (NIAAs).",
+        "Normas de Auditoria Generalmente Aceptadas (NAGAs).",
+        "Normas Ecuatorianas de Auditoría Gubernamental (NEAG)."
+      ]
+    },
+    {
+      "id": "U4P14",
+      "unidad": 4,
+      "enunciado": "¿Es ético el comportamiento de un empleado que reporta un defecto de diseño en un nuevo producto al director del departamento de la empresa?",
+      "tipo": "verdadero_falso",
+      "opciones": [
+        "Verdadero",
+        "Falso"
+      ],
+      "respuesta_correcta": "Verdadero"
+    },
+    {
+      "id": "U4P15",
+      "unidad": 4,
+      "enunciado": "La política de auditoría interna verificar y monitorear de forma mensual la ejecución de las normas y los procedimientos de seguridad informática vigentes dentro de las instalaciones de la UCE.",
+      "tipo": "verdadero_falso",
+      "opciones": [
+        "Verdadero",
+        "Falso"
+      ],
+      "respuesta_correcta": "Falso"
+    },
+    {
+      "id": "U4P16",
+      "unidad": 4,
+      "enunciado": "Identificador del conjunto de servicios (SSID):",
+      "tipo": "seleccion_multiple",
+      "opciones": [
+        "Un identificador único de 32 caracteres adjunto al encabezamiento de los paquetes enviados a través de una WLAN que actúa como una contraseña cuando un dispositivo móvil trata de conectarse al BSS (las estaciones o nodos de comunicación en una LAN inalámbrica).",
+        "Un SSID también se conoce como un nombre de red porque esencialmente es un nombre que identifica una red inalámbrica",
+        "El SSID diferencia una WLAN de otra, por lo que todos los puntos de acceso y todos los dispositivos que intentan conectarse a una WLAN específica deben utilizar el mismo SSID. No se permitirá que un dispositivo se una al BSS a menos que pueda proporcionar el único SSID",
+        "Debido a que un SSID puede ser olfateado en texto plano desde un paquete, no proporciona ninguna seguridad a la red"
+      ],
+      "respuesta_correcta": [
+        "Un identificador único de 32 caracteres adjunto al encabezamiento de los paquetes enviados a través de una WLAN que actúa como una contraseña cuando un dispositivo móvil trata de conectarse al BSS (las estaciones o nodos de comunicación en una LAN inalámbrica).",
+        "Un SSID también se conoce como un nombre de red porque esencialmente es un nombre que identifica una red inalámbrica",
+        "El SSID diferencia una WLAN de otra, por lo que todos los puntos de acceso y todos los dispositivos que intentan conectarse a una WLAN específica deben utilizar el mismo SSID. No se permitirá que un dispositivo se una al BSS a menos que pueda proporcionar el único SSID",
+        "Debido a que un SSID puede ser olfateado en texto plano desde un paquete, no proporciona ninguna seguridad a la red"
+      ]
+    },
+    {
+      "id": "U4P17",
+      "unidad": 4,
+      "enunciado": "Se basa en dos niveles de seguridad: AH (encabezamiento de autenticación), que autentica al remitente y garantiza al destinatario que la información no ha sido alterada durante la transmisión, y ESP (protocolo de seguridad de encapsulamiento), que proporciona cifrado de datos además de garantía de autenticación e integridad.",
+      "tipo": "seleccion_unica",
+      "opciones": [
+        "SSH",
+        "IPSec",
+        "Ninguno",
+        "SSL/TLS"
+      ],
+      "respuesta_correcta": "IPSec"
+    },
+    {
+      "id": "U4P18",
+      "unidad": 4,
+      "enunciado": "Las actividades principales de respuesta de emergencia son:",
+      "tipo": "seleccion_multiple",
+      "opciones": [
+        "Evacuación y Rescate",
+        "Establecer un Centro de Operación de Emergencia",
+        "Confirmación de bienestar de empleados",
+        "Estabilizar la situación y prevenir daños secundarios"
+      ],
+      "respuesta_correcta": [
+        "Evacuación y Rescate",
+        "Establecer un Centro de Operación de Emergencia",
+        "Confirmación de bienestar de empleados",
+        "Estabilizar la situación y prevenir daños secundarios"
+      ]
+    },
+    {
+      "id": "U4P19",
+      "unidad": 4,
+      "enunciado": "Disponibilidad es la prevención de la divulgación no autorizada de información. Esto puede ser el resultado de medidas de seguridad deficientes o de fugas de información por parte del personal. Un ejemplo de medidas de seguridad deficientes sería permitir el acceso anónimo a información delicada.",
+      "tipo": "verdadero_falso",
+      "opciones": [
+        "Verdadero",
+        "Falso"
+      ],
+      "respuesta_correcta": "Falso"
+    },
+    {
+      "id": "U4P20",
+      "unidad": 4,
+      "enunciado": "Empareje según corresponda:",
+      "tipo": "emparejar",
+      "opciones": {
+        "conceptos": [
+          "Tipo de amenaza",
+          "Dispositivos de seguridad",
+          "Buena práctica de ciberseguridad",
+          "Castillos del mundo cibernético",
+          "Acción que tomar ante una brecha de seguridad"
+        ],
+        "definiciones": [
+          "Ransomware y Errores de software",
+          "IPS, IDS, Honeypots",
+          "Educar a los usuarios",
+          "Facebook, Amazon, Twitter",
+          "Comunicar inmediatamente el problema"
+        ]
+      },
+      "respuesta_correcta": [
+        {
+          "concepto": "Tipo de amenaza",
+          "definicion": "Ransomware y Errores de software"
+        },
+        {
+          "concepto": "Dispositivos de seguridad",
+          "definicion": "IPS, IDS, Honeypots"
+        },
+        {
+          "concepto": "Buena práctica de ciberseguridad",
+          "definicion": "Educar a los usuarios"
+        },
+        {
+          "concepto": "Castillos del mundo cibernético",
+          "definicion": "Facebook, Amazon, Twitter"
+        },
+        {
+          "concepto": "Acción que tomar ante una brecha de seguridad",
+          "definicion": "Comunicar inmediatamente el problema"
+        }
+      ]
+    },
+    {
+      "id": "U4P21",
+      "unidad": 4,
+      "enunciado": "Este ataque permite mediante comandos cambiar la función de \"accesibilidad\" que sucede al presionar 5 veces la tecla \"shift\", se puede insertar mediante registro la sentencia para ejecutar una consola CMD con permisos",
+      "tipo": "seleccion_unica",
+      "opciones": [
+        "SEEKER",
+        "STICKY KEYS",
+        "PHONRESPLOT",
+        "SAYCHEESE"
+      ],
+      "respuesta_correcta": "STICKY KEYS"
+    },
+    {
+      "id": "U4P22",
+      "unidad": 4,
+      "enunciado": "En la política de seguridad de teletrabajo uno de los pasos del procedimiento dice que toda conexión que se genere en cualquier dispositivo debe estar asegurada por los administradores de la red mediante autenticación del perfil del trabajador",
+      "tipo": "verdadero_falso",
+      "opciones": [
+        "Verdadero",
+        "Falso"
+      ],
+      "respuesta_correcta": "Verdadero"
+    },
+    {
+      "id": "U4P23",
+      "unidad": 4,
+      "enunciado": "¿Qué tecnología se utiliza para proteger, monitorear y administrar dispositivos móviles?",
+      "tipo": "seleccion_unica",
+      "opciones": [
+        "VPN",
+        "MDM",
+        "ASA Firewall",
+        "rootkit"
+      ],
+      "respuesta_correcta": "MDM"
+    },
+    {
+      "id": "U4P24",
+      "unidad": 4,
+      "enunciado": "El gerente de ventas viaja para encontrarse con un cliente. Se olvidó de descargar el contrato del servidor de la empresa para llevarlo a la reunión. El tren tiene una red Wi-Fi abierta. Qué debe hacer?",
+      "tipo": "seleccion_unica",
+      "opciones": [
+        "Esperar hasta llegar a la oficina del cliente y solicitar acceso a su red Wi-Fi privada",
+        "Usar la conexión 4G en su teléfono móvil para conectarse a la red Wi-Fi abierta",
+        "Acceder a la red Wi-Fi abierta y conectarse a los servidores de la empresa usando una conexión VPN en su computador portátil",
+        "Olvidarse del contrato de la reunión y ponerse al día con otros pendientes"
+      ],
+      "respuesta_correcta": "Acceder a la red Wi-Fi abierta y conectarse a los servidores de la empresa usando una conexión VPN en su computador portátil"
+    },
+    {
+      "id": "U4P25",
+      "unidad": 4,
+      "enunciado": "Los aspectos a considerar para el intercambio de la información son:",
+      "tipo": "seleccion_multiple",
+      "opciones": [
+        "Mensajería electrónica",
+        "Transporte de activos",
+        "Acuerdos de intercambio",
+        "Acuerdos de confidencialidad y secreto"
+      ],
+      "respuesta_correcta": [
+        "Mensajería electrónica",
+        "Acuerdos de intercambio",
+        "Acuerdos de confidencialidad y secreto"
+      ]
+    },
+    {
+      "id": "U4P26",
+      "unidad": 4,
+      "enunciado": "¿Cuáles son los principios del menor privilegio?",
+      "tipo": "seleccion_multiple",
+      "opciones": [
+        "Para atacar a su organización, los hackers de ingeniería social explotan la credulidad, la pereza, los buenos modales o incluso el entusiasmo de su personal",
+        "Si todos los procesos se ejecutaran con el menor conjunto de privilegios necesarios para realizar las tareas del usuario, sería más difícil que el software malicioso y molesto infectara una máquina y se propagara a otras",
+        "Cualquiera que haya sido víctima de virus, gusanos y otros programas maliciosos (malware) apreciará el principio de seguridad del 'menor privilegio'"
+      ],
+      "respuesta_correcta": [
+        "Si todos los procesos se ejecutaran con el menor conjunto de privilegios necesarios para realizar las tareas del usuario, sería más difícil que el software malicioso y molesto infectara una máquina y se propagara a otras",
+        "Cualquiera que haya sido víctima de virus, gusanos y otros programas maliciosos (malware) apreciará el principio de seguridad del 'menor privilegio'"
+      ]
+    },
+    {
+      "id": "U4P27",
+      "unidad": 4,
+      "enunciado": "¿Cuáles de los siguientes datos de la empresa deberían compartirse en sus redes sociales personales? (Elija 2)",
+      "tipo": "seleccion_multiple",
+      "opciones": [
+        "Los nombres y la información de contacto de sus colegas",
+        "La foto de perfil",
+        "La fecha de nacimiento",
+        "El nombre de la organización",
+        "El número de teléfono móvil",
+        "El nombre y la información de contacto del gerente",
+        "La dirección de correo electrónico"
+      ],
+      "respuesta_correcta": [
+        "La foto de perfil",
+        "El nombre de la organización"
+      ]
+    },
+    {
+      "id": "U4P28",
+      "unidad": 4,
+      "enunciado": "Los activos de información según la norma ISO 27002 tienen que ser justificados y tener asignado un propietario y deberán identificar a los propietarios para todos los activos y asignarles la responsabilidad del mantenimiento de los diferentes controles adecuados",
+      "tipo": "verdadero_falso",
+      "opciones": [
+        "Verdadero",
+        "Falso"
+      ],
+      "respuesta_correcta": "Verdadero"
+    },
+    {
+      "id": "U4P29",
+      "unidad": 4,
+      "enunciado": "La autenticación de dos factores se da cuando un objeto físico que codifica la identidad del usuario más una contraseña",
+      "tipo": "verdadero_falso",
+      "opciones": [
+        "Verdadero",
+        "Falso"
+      ],
+      "respuesta_correcta": "Verdadero"
+    },
+    {
+      "id": "U4P30",
+      "unidad": 4,
+      "enunciado": "Para proteger la información en los puestos de trabajo, las persona deben:",
+      "tipo": "seleccion_multiple",
+      "opciones": [
+        "El oficial de tecnología no se encarga de monitorear que cada usuario administrativo guarde la información en un lugar seguro.",
+        "Notificar a cada funcionario que todos los equipos de cómputo y dispositivos portátiles deben tener aplicado el cierre de sesión por inactividad en un tiempo máximo de 5 minutos",
+        "Los usuarios deben resguardar periódicamente su información histórica en períodos no mayor a 24 horas",
+        "El equipo de seguridad no se encargará de cerrar de forma manual sesiones abiertas."
+      ],
+      "respuesta_correcta": [
+        "Notificar a cada funcionario que todos los equipos de cómputo y dispositivos portátiles deben tener aplicado el cierre de sesión por inactividad en un tiempo máximo de 5 minutos",
+        "Los usuarios deben resguardar periódicamente su información histórica en períodos no mayor a 24 horas"
+      ]
+    },
+    {
+      "id": "U4P31",
+      "unidad": 4,
+      "enunciado": "Diseñado para proporcionar una fuerte autenticación para aplicaciones cliente/servidor mediante el uso de criptografía de clave secreta",
+      "tipo": "seleccion_unica",
+      "opciones": [
+        "VPN",
+        "Ninguna",
+        "Single Sign-On",
+        "IPSec"
+      ],
+      "respuesta_correcta": "Ninguna"
+    },
+    {
+      "id": "U4P32",
+      "unidad": 4,
+      "enunciado": "¿Una violación de la seguridad puede tener un impacto devastador en la reputación de una organización?",
+      "tipo": "verdadero_falso",
+      "opciones": [
+        "Verdadero",
+        "Falso"
+      ],
+      "respuesta_correcta": "Verdadero"
+    },
+    {
+      "id": "U4P33",
+      "unidad": 4,
+      "enunciado": "¿Cuáles de las siguientes son funciones del Blue Team? (Elija 2)",
+      "tipo": "seleccion_multiple",
+      "opciones": [
+        "Utilizar herramientas y técnicas utilizadas por los hackers",
+        "Emular los comportamientos de un Black Team",
+        "Emular ataques de la manera más realista posible",
+        "Identificar fallos de seguridad y/o vulnerabilidades",
+        "Trabajar en la mejora continua de la seguridad"
+      ],
+      "respuesta_correcta": [
+        "Identificar fallos de seguridad y/o vulnerabilidades",
+        "Trabajar en la mejora continua de la seguridad"
+      ]
+    },
+    {
+      "id": "U4P34",
+      "unidad": 4,
+      "enunciado": "Confidencialidad es la prevención de la retención no autorizada de información o recursos. Esto no se aplica sólo al personal que retiene información. La información debe estar a disposición de los usuarios autorizados con la mayor libertad posible",
+      "tipo": "verdadero_falso",
+      "opciones": [
+        "Verdadero",
+        "Falso"
+      ],
+      "respuesta_correcta": "Falso"
+    },
+    {
+      "id": "U4P35",
+      "unidad": 4,
+      "enunciado": "Según la ISO 27035 las etapas claves de la gestión de incidentes son:",
+      "tipo": "seleccion_multiple",
+      "opciones": [
+        "Preparase para enfrentarse a los incidentes",
+        "Dar respuesta a los incidentes, lo que quiere decir, investigarlos y resolverlos",
+        "Aprender de las lecciones",
+        "Examinar los incidentes y tomar las decisiones sobre la forma en que se han llevado a cabo las cosas",
+        "Reconocer los incidentes de seguridad de la información"
+      ],
+      "respuesta_correcta": [
+        "Preparase para enfrentarse a los incidentes",
+        "Dar respuesta a los incidentes, lo que quiere decir, investigarlos y resolverlos",
+        "Aprender de las lecciones",
+        "Examinar los incidentes y tomar las decisiones sobre la forma en que se han llevado a cabo las cosas",
+        "Reconocer los incidentes de seguridad de la información"
+      ]
+    },
+    {
+      "id": "U4P36",
+      "unidad": 4,
+      "enunciado": "Según la ISO 27039:1 un IDS es un conjunto de componentes de:",
+      "tipo": "seleccion_multiple",
+      "opciones": [
+        "Cableado",
+        "Software",
+        "Hardware",
+        "Firmware"
+      ],
+      "respuesta_correcta": [
+        "Software",
+        "Hardware"
+      ]
+    }
+  ]
+}
