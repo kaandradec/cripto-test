@@ -23,6 +23,7 @@
         :question-states="questionStates"
         :current-index="currentQuestionIndex"
         @question-selected="goToQuestion"
+        @reset-answers="resetAllAnswers"
       />
 
       <!-- Vista principal del cuestionario -->
@@ -109,6 +110,16 @@ export default {
       questionStates.value[currentQuestionIndex.value] = isCorrect;
     };
 
+    // Resetear todas las respuestas y estados
+    const resetAllAnswers = () => {
+      // Reinicializar arrays
+      userAnswers.value = new Array(questions.value.length).fill(null);
+      questionStates.value = new Array(questions.value.length).fill(null);
+
+      // Volver a la primera pregunta
+      currentQuestionIndex.value = 0;
+    };
+
     // Lifecycle
     onMounted(() => {
       initializeArrays();
@@ -125,6 +136,7 @@ export default {
       nextQuestion,
       previousQuestion,
       handleAnswerSubmission,
+      resetAllAnswers,
     };
   },
 };

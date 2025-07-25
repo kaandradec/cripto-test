@@ -6,8 +6,9 @@ Una aplicación web interactiva desarrollada en Vue 3 para practicar cuestionari
 
 - **Múltiples tipos de preguntas**: Selección única, selección múltiple, verdadero/falso, rellenar espacios y emparejar
 - **Navegación intuitiva**: Panel lateral con cuadrícula de preguntas numeradas
+- **Filtrado avanzado**: Por unidades temáticas y por tipo de pregunta
+- **Botón de reset**: Reiniciar todas las respuestas con confirmación de seguridad
 - **Retroalimentación instantánea**: Feedback inmediato sobre respuestas correctas e incorrectas
-- **Filtrado por unidades**: Organización de preguntas por unidades temáticas
 - **Estadísticas en tiempo real**: Contador de preguntas respondidas, correctas e incorrectas
 - **Opciones barajadas**: Las opciones de las preguntas se mezclan automáticamente para evitar patrones de memorización
 - **Diseño responsivo**: Optimizado para dispositivos móviles y desktop
@@ -33,14 +34,21 @@ const questionStates = ref([])        // Estado: null, true, false
 ### `NavigationGrid.vue` - Panel de Navegación
 **Características:**
 - Cuadrícula de botones numerados (uno por pregunta)
-- Filtros por unidad temática
+- **Filtros avanzados**:
+  - Filtro por unidad temática (Unidad 1, 2, 3, 4, Todas)
+  - Filtro por tipo de pregunta (Opción Única, Múltiple, V/F, Completar, Emparejar, Todos)
+  - Combinación de ambos filtros simultáneamente
+- **Controles de gestión**:
+  - Botón "Limpiar filtros" para remover filtros aplicados
+  - Botón "🔄 Reiniciar Respuestas" para resetear todo el progreso
 - Indicadores visuales de estado:
   - 🔵 Azul: Pregunta actual
   - 🟢 Verde: Respondida correctamente
   - 🔴 Rojo: Respondida incorrectamente
   - ⚪ Gris: Sin responder
-- Estadísticas en tiempo real
-- Leyenda de colores
+- Estadísticas en tiempo real con contadores dinámicos
+- Información de filtros aplicados
+- Leyenda de colores para facilitar navegación
 
 ### `QuizView.vue` - Vista Principal del Cuestionario
 **Funcionalidades:**

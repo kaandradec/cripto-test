@@ -66,6 +66,17 @@
       </button>
     </div>
 
+    <!-- Botón de reset general -->
+    <div class="reset-section">
+      <button
+        @click="resetAllAnswers"
+        class="reset-btn"
+        title="Restablecer todas las respuestas a estado sin responder"
+      >
+        🔄 Reiniciar Respuestas
+      </button>
+    </div>
+
     <!-- Cuadrícula de preguntas -->
     <div class="questions-grid">
       <button
@@ -139,7 +150,7 @@ export default {
       required: true,
     },
   },
-  emits: ["question-selected"],
+  emits: ["question-selected", "reset-answers"],
   setup(props, { emit }) {
     const selectedUnit = ref(null);
     const selectedType = ref(null);
@@ -282,6 +293,17 @@ export default {
       selectedType.value = null;
     };
 
+    // Resetear todas las respuestas
+    const resetAllAnswers = () => {
+      if (
+        confirm(
+          "¿Estás seguro de que quieres reiniciar todas las respuestas? Esta acción no se puede deshacer."
+        )
+      ) {
+        emit("reset-answers");
+      }
+    };
+
     return {
       selectedUnit,
       selectedType,
@@ -295,6 +317,7 @@ export default {
       getTypeLabel,
       selectQuestion,
       clearAllFilters,
+      resetAllAnswers,
     };
   },
 };
@@ -532,6 +555,43 @@ export default {
 
 .legend-color.current {
   background: #2196f3;
+}
+
+/* Estilos para la sección de reset */
+.reset-section {
+  margin: 1rem 0;
+  padding: 1rem;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.reset-btn {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  background: linear-gradient(135deg, #ff6b6b, #ee5a52);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.reset-btn:hover {
+  background: linear-gradient(135deg, #ff5252, #e53935);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 8px rgba(255, 107, 107, 0.3);
+}
+
+.reset-btn:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 4px rgba(255, 107, 107, 0.2);
 }
 
 @media (max-width: 768px) {
